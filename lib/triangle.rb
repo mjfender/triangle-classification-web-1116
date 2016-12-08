@@ -16,12 +16,6 @@ class Triangle
         # rescue TriangleError => error
         # puts error.message
       # end
-    elsif sides_array.any?{|e| e <= 0} 
-      begin
-        raise TriangleError
-        rescue TriangleError => error
-            puts error.message_zero
-      end
     else
       true
     end
